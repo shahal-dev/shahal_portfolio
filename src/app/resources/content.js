@@ -34,7 +34,7 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/shahadatw6//",
   },
   {
     name: "X",
@@ -44,7 +44,7 @@ const social = [
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:shahadatw6@gmail.com",
   },
 ];
 
@@ -75,7 +75,7 @@ const about = {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -96,30 +96,26 @@ const about = {
     experiences: [
       {
         company: "ICCCAD",
-        timeframe: "2024 ",
-        role: "Reasearch Intern",
+        timeframe: "2025-Present ",
+        role: "Reasearch Assistant, COLOCAL Project",
         achievements: [
-          <>
-Worked closely with the CAP-RES team to learn how to implement cross domain knowledge into building resilience
-          </>,
-          <>
-Working on a ERP For the organization
-          </>,
+
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
+          // {
+          //   src: "/images/projects/project-01/cover-01.jpg",
+          //   alt: "Once UI Project",
+          //   width: 16,
+          //   height: 9,
+          // },
         ],
       },
+      
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Center for Astronomy, Space Science and Astrophysics (CASSA)",
+        timeframe: "2024 - Present",
+        role: "Project: RGC",
         achievements: [
           <>
             Developed a design system that unified the brand across multiple platforms, improving
@@ -132,20 +128,107 @@ Working on a ERP For the organization
         ],
         images: [],
       },
+      {
+        company: "AUTOMATE YOUR DAY WITH PYTHON",
+        timeframe: "2023 - Present",
+        role: "Workshop SOD",
+        achievements: [
+          <>
+An workshop for the faculties of non engineering schools , to automate their workflow with programming.
+          </>,
+          <>
+Helped teaching basics of programming and Python Language to the faculty memebers of non Engineering faculties at IUB
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "BlockLab",
+        timeframe: "2023 - Present",
+        role: "Solution architect",
+        achievements: [
+          <>
+We have been designing blockchain based solution addressing various social, environmental and technological problems.
+          </>
+        ],
+        images: [],
+      },
+      {
+        company: "দূরবিন - Durbin",
+        timeframe: "2023 - Present",
+        role: "National Volunteer and AstroPhotographer",
+        achievements: [
+          <>
+            Developed a design system that unified the brand across multiple platforms, improving
+            design consistency by 40%.
+          </>,
+          <>
+            Led a cross-functional team to launch a new product line, contributing to a 15% increase
+            in overall company revenue.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "TransEnd",
+        timeframe: "2023 - 2024",
+        role: "Intern",
+        achievements: [
+          <>
+Working aiming to help 1 million marginalized and underrepresented community being skilled in order to pursuing social and economical empowerment.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Independent photography Club",
+        timeframe: "2022 - 2023",
+        role: "Executive of Creative and Media Publications",
+        achievements: [
+          <>
+In a very short time, I have proven myself to be an executive member of the club.
+</>,
+        ],
+        images: [],
+      },
+      {
+        company: "ICCCAD",
+        timeframe: "2024-2024",
+        role: "Reasearch Intern",
+        achievements: [
+          <>
+Worked closely with the CAP-RES team to learn how to implement cross domain knowledge into building resilience
+          </>,
+          <>
+Working on a ERP For the organization
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          // {
+          //   src: "/images/projects/project-01/cover-01.jpg",
+          //   alt: "Once UI Project",
+          //   width: 16,
+          //   height: 9,
+          // },
+        ],
+      },
     ],
+    
   },
   studies: {
     display: true, // set to false to hide this section
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Independent University, Bangladesh",
+        description: <>Bachelor of Computer Science and Engineering With Astronomy and AstroPhysics minor</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Notre Dame College ",
+        description: <>Higher Secondary School Certificate</>,
       },
+
     ],
   },
   technical: {
@@ -153,18 +236,18 @@ Working on a ERP For the organization
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Astro Image Processing",
+        description: <>Able to process Astro Images with various tools and python.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
+            src: "/images/Astro/bodes.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
+            src: "/images/Astro/cigar.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -173,11 +256,62 @@ Working on a ERP For the organization
       },
       {
         title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        description: <>Building next gen apps with Next.js</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
+            src: "/images/projects/shProjects/Agro.png",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Decentralized Application (DApp) Developer ",
+        description: <>Building next gen web3 Apps</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/shProjects/bibaho.png",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Deep Learning Practitioner",
+        description: <>Designing neural netwrok for various problems and fine tune them </>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/shProjects/nn1.png",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/shProjects/nn2.png",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Designing",
+        description: <>Designing content, posters and other visuals</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/shProjects/de1.png",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/projects/shProjects/de2.png",
             alt: "Project image",
             width: 16,
             height: 9,
