@@ -58,7 +58,7 @@ const home = {
       I'm Shahal, a Reseasrch Assistant at <InlineCode>ICCCAD</InlineCode>, where I am currently working in 
       <br /> COLOCAL project. I am also an astrophotographer, currently persuing my BSc. with Computer science and Enginnering <br/>
       and Astronomy and astrophysics minor. I am a silver award and award of distinction winner in International Blockchain Olympiad. <br/>
-      I am currentlu working with nural networks. I also have proficiency in Designing.
+      I am currentlu working with neural networks. I also have proficiency in Designing.
     </>
   ),
 };
@@ -323,16 +323,16 @@ Working on a ERP For the organization
 };
 
 const blog = {
-  label: "Blog",
-  title: "Writing about design and tech...",
+  label: "",
+  title: "",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
 };
 
 const work = {
-  label: "Work",
-  title: "My projects",
+  label: "",
+  title: "",
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
@@ -344,76 +344,76 @@ const gallery = {
   description: `A photo collection by ${person.name}`,
   // Images from https://pexels.com
   images: [
-    {
-      src: "/images/gallery/img-01.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-02.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-03.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-04.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-05.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-06.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-07.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-08.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-09.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-10.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-11.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-12.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-13.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-14.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
+    // {
+    //   src: "/images/gallery/img-01.jpg",
+    //   alt: "image",
+    //   orientation: "vertical",
+    // },
+    // {
+    //   src: "/images/gallery/img-02.jpg",
+    //   alt: "image",
+    //   orientation: "horizontal",
+    // },
+    // {
+    //   src: "/images/gallery/img-03.jpg",
+    //   alt: "image",
+    //   orientation: "vertical",
+    // },
+    // {
+    //   src: "/images/gallery/img-04.jpg",
+    //   alt: "image",
+    //   orientation: "horizontal",
+    // },
+    // {
+    //   src: "/images/gallery/img-05.jpg",
+    //   alt: "image",
+    //   orientation: "horizontal",
+    // },
+    // {
+    //   src: "/images/gallery/img-06.jpg",
+    //   alt: "image",
+    //   orientation: "vertical",
+    // },
+    // {
+    //   src: "/images/gallery/img-07.jpg",
+    //   alt: "image",
+    //   orientation: "horizontal",
+    // },
+    // {
+    //   src: "/images/gallery/img-08.jpg",
+    //   alt: "image",
+    //   orientation: "vertical",
+    // },
+    // {
+    //   src: "/images/gallery/img-09.jpg",
+    //   alt: "image",
+    //   orientation: "horizontal",
+    // },
+    // {
+    //   src: "/images/gallery/img-10.jpg",
+    //   alt: "image",
+    //   orientation: "horizontal",
+    // },
+    // {
+    //   src: "/images/gallery/img-11.jpg",
+    //   alt: "image",
+    //   orientation: "vertical",
+    // },
+    // {
+    //   src: "/images/gallery/img-12.jpg",
+    //   alt: "image",
+    //   orientation: "horizontal",
+    // },
+    // {
+    //   src: "/images/gallery/img-13.jpg",
+    //   alt: "image",
+    //   orientation: "horizontal",
+    // },
+    // {
+    //   src: "/images/gallery/img-14.jpg",
+    //   alt: "image",
+    //   orientation: "horizontal",
+    // },
   ],
 };
 
