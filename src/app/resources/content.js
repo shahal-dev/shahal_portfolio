@@ -349,71 +349,71 @@ const gallery = {
       alt: "image",
       orientation: "vertical",
     },
-    // {
-    //   src: "/images/gallery/img-02.jpg",
-    //   alt: "image",
-    //   orientation: "horizontal",
-    // },
-    // {
-    //   src: "/images/gallery/img-03.jpg",
-    //   alt: "image",
-    //   orientation: "vertical",
-    // },
-    // {
-    //   src: "/images/gallery/img-04.jpg",
-    //   alt: "image",
-    //   orientation: "horizontal",
-    // },
-    // {
-    //   src: "/images/gallery/img-05.jpg",
-    //   alt: "image",
-    //   orientation: "horizontal",
-    // },
-    // {
-    //   src: "/images/gallery/img-06.jpg",
-    //   alt: "image",
-    //   orientation: "vertical",
-    // },
-    // {
-    //   src: "/images/gallery/img-07.jpg",
-    //   alt: "image",
-    //   orientation: "horizontal",
-    // },
-    // {
-    //   src: "/images/gallery/img-08.jpg",
-    //   alt: "image",
-    //   orientation: "vertical",
-    // },
-    // {
-    //   src: "/images/gallery/img-09.jpg",
-    //   alt: "image",
-    //   orientation: "horizontal",
-    // },
-    // {
-    //   src: "/images/gallery/img-10.jpg",
-    //   alt: "image",
-    //   orientation: "horizontal",
-    // },
-    // {
-    //   src: "/images/gallery/img-11.jpg",
-    //   alt: "image",
-    //   orientation: "vertical",
-    // },
-    // {
-    //   src: "/images/gallery/img-12.jpg",
-    //   alt: "image",
-    //   orientation: "horizontal",
-    // },
-    // {
-    //   src: "/images/gallery/img-13.jpg",
-    //   alt: "image",
-    //   orientation: "horizontal",
-    // },
-    // {
-    //   src: "/images/gallery/img-14.jpg",
-    //   alt: "image",
-    //   orientation: "horizontal",
-    // },
+    {
+      src: "/images/gallery/img-02.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/img-03.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/img-04.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/img-05.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/img-06.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/img-07.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/img-08.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/img-09.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/img-10.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/img-11.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    {
+      src: "/images/gallery/img-12.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/img-13.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/img-14.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
   ],
 };
 
