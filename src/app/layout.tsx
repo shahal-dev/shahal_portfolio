@@ -35,62 +35,9 @@ export async function generateMetadata() {
         "max-image-preview": "large",
         "max-snippet": -1,
       },
-
-      export async function generateMetadata() {
-  return {
-    metadataBase: new URL(`https://${baseURL}`),
-    title: home.title,
-    description: home.description,
-    openGraph: {
-      title: `${person.firstName}'s Portfolio`,
-      description: "Portfolio website showcasing my work.",
-      url: baseURL,
-      siteName: `${person.firstName}'s Portfolio`,
-      locale: "en_US",
-      type: "website",
-    },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        "max-video-preview": -1,
-        "max-image-preview": "large",
-        "max-snippet": -1,
-      },
     },
     verification: {
-      google: "zDi2OFFJW4nJeSjniuk0AXS-_fy9UbNXFo4K4zQHGAI", // ✅ ADD THIS LINE
-    },
-  };
-}
-export async function generateMetadata() {
-  return {
-    metadataBase: new URL(`https://${baseURL}`),
-    title: home.title,
-    description: home.description,
-    openGraph: {
-      title: `${person.firstName}'s Portfolio`,
-      description: "Portfolio website showcasing my work.",
-      url: baseURL,
-      siteName: `${person.firstName}'s Portfolio`,
-      locale: "en_US",
-      type: "website",
-    },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        "max-video-preview": -1,
-        "max-image-preview": "large",
-        "max-snippet": -1,
-      },
-    },
-    verification: {
-      google: "zDi2OFFJW4nJeSjniuk0AXS-_fy9UbNXFo4K4zQHGAI", // ✅ ADD THIS LINE
+      google: "zDi2OFFJW4nJeSjniuk0AXS-_fy9UbNXFo4K4zQHGAI", // ✅ Correct placement
     },
   };
 }
@@ -147,7 +94,13 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       )}
     >
       <ToastProvider>
-        <Column style={{ minHeight: "100vh" }} as="body" fillWidth margin="0" padding="0">
+        <Column
+          style={{ minHeight: "100vh" }}
+          as="body"
+          fillWidth
+          margin="0"
+          padding="0"
+        >
           <Background
             mask={{
               cursor: effects.mask.cursor,
@@ -195,7 +148,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
               opacity: effects.lines.opacity as any,
             }}
           />
-          <Flex fillWidth minHeight="16"></Flex>
+          <Flex fillWidth minHeight="16" />
           <Header />
           <Flex
             position="relative"
