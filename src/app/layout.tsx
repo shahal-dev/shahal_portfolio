@@ -35,6 +35,62 @@ export async function generateMetadata() {
         "max-image-preview": "large",
         "max-snippet": -1,
       },
+
+      export async function generateMetadata() {
+  return {
+    metadataBase: new URL(`https://${baseURL}`),
+    title: home.title,
+    description: home.description,
+    openGraph: {
+      title: `${person.firstName}'s Portfolio`,
+      description: "Portfolio website showcasing my work.",
+      url: baseURL,
+      siteName: `${person.firstName}'s Portfolio`,
+      locale: "en_US",
+      type: "website",
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+    verification: {
+      google: "zDi2OFFJW4nJeSjniuk0AXS-_fy9UbNXFo4K4zQHGAI", // ✅ ADD THIS LINE
+    },
+  };
+}
+export async function generateMetadata() {
+  return {
+    metadataBase: new URL(`https://${baseURL}`),
+    title: home.title,
+    description: home.description,
+    openGraph: {
+      title: `${person.firstName}'s Portfolio`,
+      description: "Portfolio website showcasing my work.",
+      url: baseURL,
+      siteName: `${person.firstName}'s Portfolio`,
+      locale: "en_US",
+      type: "website",
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-video-preview": -1,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+    verification: {
+      google: "zDi2OFFJW4nJeSjniuk0AXS-_fy9UbNXFo4K4zQHGAI", // ✅ ADD THIS LINE
     },
   };
 }
