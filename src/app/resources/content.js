@@ -46,6 +46,16 @@ const social = [
     icon: "email",
     link: "mailto:shahadatw6@gmail.com",
   },
+  {
+    name: "Google Scholar",
+    icon: "graduationCap", // 🎓 (use any from your icon set)
+    link: "https://scholar.google.com/citations?hl=en&user=NewZCTsAAAAJ&view_op=list_works",
+  },
+  {
+    name: "ORCID",
+    icon: "idCard", // 🪪 (or any appropriate icon name)
+    link: "https://orcid.org/my-orcid?orcid=0009-0001-5495-2619",
+  },
 ];
 
 const home = {

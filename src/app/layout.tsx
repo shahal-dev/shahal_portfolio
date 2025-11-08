@@ -102,7 +102,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         {/* 🔗 Link to your Google Scholar */}
         <link
           rel="me"
-          href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID"
+          href="https://scholar.google.com/citations?hl=en&user=NewZCTsAAAAJ&view_op=list_works"
         />
 
         {/* 🧾 Structured Data (helps Google associate both names) */}
