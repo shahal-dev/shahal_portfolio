@@ -55,10 +55,10 @@ const home = {
   headline: <>AstroPhotographer, Blockchain dev, Machine learning enthusiast, Designer</>,
   subline: (
     <>
-      I'm Shahal, a Reseasrch Assistant at <InlineCode>ICCCAD</InlineCode>, where I am currently working in 
-      <br /> COLOCAL project. I am also an astrophotographer, currently persuing my BSc. with Computer science and Enginnering <br/>
+      I'm Shahal, a Reseasrch Assistant at <InlineCode>Center For Astronomy, Space Science and Astrophysics (CASSA)</InlineCode>, where I am currently working in 
+      <br /> . I am also an astrophotographer, currently persuing my BSc. with Computer science and Enginnering <br/>
       and Astronomy and astrophysics minor. I am a silver award and award of distinction winner in International Blockchain Olympiad. <br/>
-      I am currentlu working with neural networks. I also have proficiency in Designing.
+      I am currently working with neural networks. I also have proficiency in Designing.
     </>
   ),
 };
