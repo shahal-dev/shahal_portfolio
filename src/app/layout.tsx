@@ -6,8 +6,7 @@ import classNames from "classnames";
 import { Footer, Header, RouteGuard } from "@/components";
 import { baseURL, effects, style } from "@/app/resources";
 
-import { Inter } from "next/font/google";
-import { Source_Code_Pro } from "next/font/google";
+import { Inter, Source_Code_Pro } from "next/font/google";
 
 import { person, home } from "@/app/resources/content";
 import { Background, Column, Flex, ToastProvider } from "@/once-ui/components";
@@ -37,7 +36,7 @@ export async function generateMetadata() {
       },
     },
     verification: {
-      google: "zDi2OFFJW4nJeSjniuk0AXS-_fy9UbNXFo4K4zQHGAI", // ✅ Correct placement
+      google: "zDi2OFFJW4nJeSjniuk0AXS-_fy9UbNXFo4K4zQHGAI", // ✅ Google site verification
     },
   };
 }
@@ -48,24 +47,14 @@ const primary = Inter({
   display: "swap",
 });
 
-type FontConfig = {
-  variable: string;
-};
-
-/*
-	Replace with code for secondary and tertiary fonts
-	from https://once-ui.com/customize
-*/
-const secondary: FontConfig | undefined = undefined;
-const tertiary: FontConfig | undefined = undefined;
-/*
- */
-
 const code = Source_Code_Pro({
   variable: "--font-code",
   subsets: ["latin"],
   display: "swap",
 });
+
+const secondary: any = undefined;
+const tertiary: any = undefined;
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -90,9 +79,54 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         primary.variable,
         secondary ? secondary.variable : "",
         tertiary ? tertiary.variable : "",
-        code.variable,
+        code.variable
       )}
     >
+      <head>
+        {/* ✅ Google verification (redundant-safe, okay with generateMetadata) */}
+        <meta
+          name="google-site-verification"
+          content="zDi2OFFJW4nJeSjniuk0AXS-_fy9UbNXFo4K4zQHGAI"
+        />
+
+        {/* 🧠 Identity linking and keywords */}
+        <meta
+          name="author"
+          content="Md. Shahadat Hossain Shahal (also known as M. S. H. Shahal)"
+        />
+        <meta
+          name="keywords"
+          content="Md. Shahadat Hossain Shahal, M. S. H. Shahal, astrophysics, AI, radio astronomy, bent tail galaxies, researcher, machine learning, deep learning, radio AGN"
+        />
+
+        {/* 🔗 Link to your Google Scholar */}
+        <link
+          rel="me"
+          href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID"
+        />
+
+        {/* 🧾 Structured Data (helps Google associate both names) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Md. Shahadat Hossain Shahal",
+              alternateName: "M. S. H. Shahal",
+              jobTitle: "Researcher in Astrophysics & AI",
+              affiliation: "Center for Astronomy, Space Science and Astrophysics (CASSA)",
+              url: "https://your-domain.com",
+              sameAs: [
+                "https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID",
+                "https://orcid.org/YOUR_ORCID_ID",
+                "https://www.researchgate.net/profile/M-S-H-Shahal",
+              ],
+            }),
+          }}
+        />
+      </head>
+
       <ToastProvider>
         <Column
           style={{ minHeight: "100vh" }}
