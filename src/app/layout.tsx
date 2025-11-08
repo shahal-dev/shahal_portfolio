@@ -114,13 +114,13 @@ export default async function RootLayout({ children }: RootLayoutProps) {
               "@type": "Person",
               name: "Md. Shahadat Hossain Shahal",
               alternateName: "M. S. H. Shahal",
-              jobTitle: "Researcher in Astrophysics & AI",
+              jobTitle: "Research Assistant in Astrophysics & AI",
               affiliation: "Center for Astronomy, Space Science and Astrophysics (CASSA)",
-              url: "https://your-domain.com",
+              url: "https://shahadathshahal.vercel.app/",
               sameAs: [
-                "https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID",
-                "https://orcid.org/YOUR_ORCID_ID",
-                "https://www.researchgate.net/profile/M-S-H-Shahal",
+                "https://scholar.google.com/citations?hl=en&user=NewZCTsAAAAJ&view_op=list_works",
+                "https://orcid.org/my-orcid?orcid=0009-0001-5495-2619",
+                "https://www.researchgate.net/profile/Md-Shahadat-Hossain-Shahal",
               ],
             }),
           }}
