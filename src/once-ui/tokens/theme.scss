@@ -1,8 +1,9 @@
 :root {
     /* FONT FAMILY */
-    --font-family-body:     var(--font-primary);
-    --font-family-heading:  var(--font-secondary);
-    --font-family-label:    var(--font-tertiary);
+    /* All text uses the code font (Source Code Pro) — sizes unchanged. */
+    --font-family-body:     var(--font-code);
+    --font-family-heading:  var(--font-code);
+    --font-family-label:    var(--font-code);
     --font-family-code:     var(--font-code);
 
     --font-size-heading-multiplier:   1;
