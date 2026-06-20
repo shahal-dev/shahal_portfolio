@@ -1,11 +1,12 @@
 import React from "react";
 
-import { Heading, Flex, Text, Button, Avatar, RevealFx, Arrow, Column } from "@/once-ui/components";
-import { Projects } from "@/components/work/Projects";
+import { Heading, Flex, Text, Button, Avatar, RevealFx, Column } from "@/once-ui/components";
 
 import { baseURL, routes } from "@/app/resources";
 import { home, about, person, newsletter } from "@/app/resources/content";
 import { Mailchimp } from "@/components";
+import { FeaturedWork } from "@/components/FeaturedWork";
+import { ScrambleText } from "@/components/ScrambleText";
 import { Posts } from "@/components/blog/Posts";
 
 export async function generateMetadata() {
@@ -39,7 +40,7 @@ export async function generateMetadata() {
 
 export default function Home() {
   return (
-    <Column maxWidth="m" gap="xl" horizontal="center">
+    <Column fillWidth horizontal="start" gap="xl">
       <script
         type="application/ld+json"
         suppressHydrationWarning
@@ -62,15 +63,26 @@ export default function Home() {
           }),
         }}
       />
-      <Column fillWidth paddingY="l" gap="m">
+
+      {/* Hero — text on the left, galaxy breathing on the right */}
+      <Column fillWidth minHeight="0" paddingTop="l" paddingBottom="l" gap="m">
         <Column maxWidth="s">
           <RevealFx translateY="4" fillWidth horizontal="start" paddingBottom="m">
-            <Heading wrap="balance" variant="display-strong-l">
-              {home.headline}
+            <Heading
+              wrap="balance"
+              variant="display-strong-l"
+              style={{ textShadow: "0 2px 24px rgba(0,0,0,0.7)" }}
+            >
+              <ScrambleText text={home.headline} delay={150} />
             </Heading>
           </RevealFx>
           <RevealFx translateY="8" delay={0.2} fillWidth horizontal="start" paddingBottom="m">
-            <Text wrap="balance" onBackground="neutral-weak" variant="heading-default-xl">
+            <Text
+              wrap="balance"
+              onBackground="neutral-weak"
+              variant="heading-default-xl"
+              style={{ textShadow: "0 1px 16px rgba(0,0,0,0.7)" }}
+            >
               {home.subline}
             </Text>
           </RevealFx>
@@ -97,22 +109,29 @@ export default function Home() {
           </RevealFx>
         </Column>
       </Column>
-      <RevealFx translateY="16" delay={0.6}>
-        <Projects range={[1, 1]} />
-      </RevealFx>
+
+      {/* Selected work — numbered, text-forward, no big images */}
+      <Column fillWidth maxWidth="s" gap="l">
+        <RevealFx translateY="8" fillWidth horizontal="start">
+          <Heading as="h2" variant="display-strong-xs" wrap="balance">
+            <ScrambleText text="Selected work" trigger="view" />
+          </Heading>
+        </RevealFx>
+        <FeaturedWork />
+      </Column>
+
+      {/* Blog */}
       {routes["/blog"] && (
-        <Flex fillWidth gap="24" mobileDirection="column">
-          <Flex flex={1} paddingLeft="l">
+        <Column fillWidth maxWidth="s" gap="m">
+          <RevealFx translateY="8" fillWidth horizontal="start">
             <Heading as="h2" variant="display-strong-xs" wrap="balance">
-              Latest from the blog
+              <ScrambleText text="Latest from the blog" trigger="view" />
             </Heading>
-          </Flex>
-          <Flex flex={3} paddingX="20">
-            <Posts range={[1, 2]} columns="2" />
-          </Flex>
-        </Flex>
+          </RevealFx>
+          <Posts range={[1, 2]} columns="1" />
+        </Column>
       )}
-      <Projects range={[2]} />
+
       {newsletter.display && <Mailchimp newsletter={newsletter} />}
     </Column>
   );
