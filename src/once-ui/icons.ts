@@ -33,6 +33,8 @@ import {
 
 import { FaDiscord, FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
+import { SiGooglescholar, SiOrcid } from "react-icons/si";
+
 export const iconLibrary: Record<string, IconType> = {
   chevronUp: HiChevronUp,
   chevronDown: HiChevronDown,
@@ -63,4 +65,6 @@ export const iconLibrary: Record<string, IconType> = {
   x: FaXTwitter,
   clipboard: HiClipboard,
   arrowUpRightFromSquare: HiArrowTopRightOnSquare,
+  graduationCap: SiGooglescholar,
+  idCard: SiOrcid,
 };
