@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "AstroPhotographer, Blockchain dev, Machine learning enthusiast, Designer",
+  role: "Research Assistant · Machine Learning & Astrophysics · Blockchain Developer · AstroPhotographer",
   avatar: "/images/avatar.jpg",
   location: "Asia/Dhaka", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Bangla"], // optional: Leave the array empty if you don't want to display languages
@@ -62,13 +62,12 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: "AstroPhotographer, Blockchain dev, Machine learning enthusiast, Designer",
+  headline: "Bridging machine learning and astrophysics",
   subline: (
     <>
-      I'm Shahal, a Reseasrch Assistant at <InlineCode>Center For Astronomy, Space Science and Astrophysics (CASSA)</InlineCode>
-      <br /> . I am also an astrophotographer, currently persuing my BSc. with Computer science and Enginnering <br/>
-      and Astronomy and astrophysics minor. I am a silver award and award of distinction winner in International Blockchain Olympiad. <br/>
-      I am currently working with neural networks. I also have proficiency in Designing.
+      I'm Shahal, a Research Assistant at <InlineCode>Center for Astronomy, Space Science and Astrophysics (CASSA)</InlineCode>,
+      <br /> where I build deep-learning pipelines to classify radio galaxies and map galaxy clusters from X-ray data.
+      I'm also an astrophotographer and a Silver Award &amp; Award of Distinction winner at the International Blockchain Olympiad.
     </>
   ),
 };
@@ -93,10 +92,18 @@ const about = {
     title: "Introduction",
     description: (
       <>
-      I'm Shahal, a Reseasrch Assistant at <InlineCode>ICCCAD</InlineCode> where I am currently working in 
-      <br /> COLOCAL project. I am also an astrophotographer, currently persuing my BSc. with Computer science and Enginnering <br/>
-      and Astronomy and astrophysics minor. I am a silver award and award of distinction winner in International Blockchain Olympiad. <br/>
-      I am currentlu working with nural networks. I also have proficiency in Designing.
+        I'm Shahal, a Research Assistant at the Center for Astronomy, Space Science and
+        Astrophysics (CASSA), working at the intersection of astronomy and machine learning.
+        My research spans deep-learning classification of radio galaxies, X-ray analysis of
+        galaxy clusters, and building instrument-control systems for telescopes.
+        <br />
+        <br />
+        I hold a BSc in Computer Science &amp; Engineering with a minor in Astronomy and
+        Astrophysics from Independent University, Bangladesh, where my thesis explored
+        machine-learning approaches to radio-galaxy morphology classification. Alongside
+        research, I build full-stack and blockchain applications — work that earned a Silver
+        Award and an Award of Distinction at the International Blockchain Olympiad — and I'm an
+        active astrophotographer and science-outreach volunteer.
       </>
     ),
   },
@@ -105,123 +112,127 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "ICCCAD",
-        timeframe: "2025-Present ",
-        role: "Reasearch Assistant, COLOCAL Project",
+        company: "Center for Astronomy, Space Science and Astrophysics (CASSA)",
+        timeframe: "Jan 2026 - Present",
+        role: "PostBach Research Assistant",
         achievements: [
-
+          <>
+            Broadening the radio-galaxy classifier (RGC) to also classify sFRI and sFRII
+            sources within a single deep-learning model.
+          </>,
+          <>
+            Writing a pipeline to generate temperature maps from Chandra X-ray images of
+            galaxy clusters.
+          </>,
+          <>
+            Contributing to the center's upcoming instrument acquisition and setup decisions.
+          </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          // {
-          //   src: "/images/projects/project-01/cover-01.jpg",
-          //   alt: "Once UI Project",
-          //   width: 16,
-          //   height: 9,
-          // },
-        ],
+        images: [],
       },
-      
       {
         company: "Center for Astronomy, Space Science and Astrophysics (CASSA)",
-        timeframe: "2024 - Present",
-        role: "Project: RGC",
+        timeframe: "Sept 2025 - Dec 2025",
+        role: "Undergraduate Research Assistant",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Developed machine-learning pipelines using e2cnn to classify Wide-Angle Tail (WAT)
+            and Narrow-Angle Tail (NAT) radio galaxies from large-scale survey data.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Built a system to detect mini-haloes from X-ray galaxy-cluster images.
+          </>,
+          <>
+            Prototyped a radio telescope using a GPS antenna.
           </>,
         ],
         images: [],
       },
       {
-        company: "AUTOMATE YOUR DAY WITH PYTHON",
-        timeframe: "2023 - Present",
-        role: "Workshop SOD",
+        company: "Block Lab",
+        timeframe: "Jun 2022 - Present",
+        role: "CEO & Lead Developer",
         achievements: [
           <>
-An workshop for the faculties of non engineering schools , to automate their workflow with programming.
+            Developed a blockchain-based solution for document authentication.
           </>,
           <>
-Helped teaching basics of programming and Python Language to the faculty memebers of non Engineering faculties at IUB
+            Built transparent e-governance solutions on blockchain, and researched
+            interoperability for a paperless society in Bangladesh.
           </>,
         ],
         images: [],
       },
       {
-        company: "BlockLab",
-        timeframe: "2023 - Present",
-        role: "Solution architect",
+        company: "International Centre for Climate Change and Development (ICCCAD)",
+        timeframe: "Jan 2025 - Aug 2025",
+        role: "Research Assistant, COLOCAL Project",
         achievements: [
           <>
-We have been designing blockchain based solution addressing various social, environmental and technological problems.
-          </>
+            Developed the web application for the COLOCAL project.
+          </>,
+          <>
+            Gained extensive experience in field work and project management.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "International Centre for Climate Change and Development (ICCCAD)",
+        timeframe: "Jun 2024 - Dec 2024",
+        role: "Research Intern, CAP-RES Project",
+        achievements: [
+          <>
+            Developed an ERP system for the organisation and a machine-learning methodology
+            for river-erosion detection.
+          </>,
+          <>
+            Gained hands-on experience in research methodology and documentation.
+          </>,
         ],
         images: [],
       },
       {
         company: "দূরবিন - Durbin",
-        timeframe: "2023 - Present",
-        role: "National Volunteer and AstroPhotographer",
+        timeframe: "Jun 2023 - Present",
+        role: "National Volunteer & AstroPhotographer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Astrophotography and astronomical image processing for outreach.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Outreach and event coordination for public astronomy programmes.
           </>,
         ],
         images: [],
       },
       {
-        company: "TransEnd",
-        timeframe: "2023 - 2024",
-        role: "Intern",
+        company: "CSC 211: Algorithms, CSE Dept, IUB",
+        timeframe: "May 2023 - Jun 2024",
+        role: "Student on Duty (SOD)",
         achievements: [
           <>
-Working aiming to help 1 million marginalized and underrepresented community being skilled in order to pursuing social and economical empowerment.
+            Ran tutorial classes for enrolled students and organised study materials and
+            course content.
           </>,
         ],
         images: [],
       },
       {
-        company: "Independent photography Club",
-        timeframe: "2022 - 2023",
-        role: "Executive of Creative and Media Publications",
+        company: "Automate Your Day with Python, IUB",
+        timeframe: "Jun 2023 - Dec 2023",
+        role: "Workshop SOD",
         achievements: [
           <>
-In a very short time, I have proven myself to be an executive member of the club.
-</>,
+            Helped run a workshop teaching non-engineering faculty to automate their workflows
+            with programming.
+          </>,
+          <>
+            Taught the basics of programming and Python to faculty members across non-engineering
+            schools at IUB.
+          </>,
         ],
         images: [],
-      },
-      {
-        company: "ICCCAD",
-        timeframe: "2024-2024",
-        role: "Reasearch Intern",
-        achievements: [
-          <>
-Worked closely with the CAP-RES team to learn how to implement cross domain knowledge into building resilience
-          </>,
-          <>
-Working on a ERP For the organization
-          </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          // {
-          //   src: "/images/projects/project-01/cover-01.jpg",
-          //   alt: "Once UI Project",
-          //   width: 16,
-          //   height: 9,
-          // },
-        ],
       },
     ],
     
@@ -231,14 +242,20 @@ Working on a ERP For the organization
     title: "Studies",
     institutions: [
       {
-        name: "Independent University, Bangladesh",
-        description: <>Bachelor of Computer Science and Engineering With Astronomy and AstroPhysics minor</>,
+        name: "Independent University, Bangladesh (2022 – 2025)",
+        description: (
+          <>
+            BSc in Computer Science &amp; Engineering, minor in Astronomy &amp; Astrophysics
+            (GPA 3.66). Arrows Scholar (100% scholarship) and seven-time Vice Chancellor's
+            List honoree. Thesis: <em>Machine Learning Approaches for Radio Galaxy Morphology
+            Classification</em>.
+          </>
+        ),
       },
       {
-        name: "Notre Dame College ",
-        description: <>Higher Secondary School Certificate</>,
+        name: "Notre Dame College, Dhaka (2018 – 2020)",
+        description: <>Higher Secondary School Certificate — GPA 5.00.</>,
       },
-
     ],
   },
   technical: {
@@ -246,87 +263,90 @@ Working on a ERP For the organization
     title: "Technical skills",
     skills: [
       {
-        title: "Astro Image Processing",
-        description: <>Able to process Astro Images with various tools and python.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/Astro/bodes.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/Astro/cigar.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+        title: "Machine Learning & AI",
+        description: (
+          <>
+            Designing and fine-tuning deep neural networks for scientific image analysis —
+            from data pipelines to trained, evaluated models.
+          </>
+        ),
+        tags: [
+          "Python",
+          "PyTorch",
+          "e2cnn (Equivariant CNNs)",
+          "scikit-learn",
+          "XGBoost",
+          "OpenCV",
+          "Model Fine-tuning",
         ],
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/shProjects/Agro.png",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+        title: "Astronomy & Astrophysics",
+        description: (
+          <>
+            Processing astronomical data from raw frames to science-ready maps, and building
+            tooling to operate the instruments that capture it.
+          </>
+        ),
+        tags: [
+          "Astropy",
+          "FITS Image Processing",
+          "Radio Astronomy Data",
+          "Chandra / CIAO X-ray",
+          "Plate Solving",
+          "Telescope Control",
+          "Astrophotography",
         ],
+        images: [],
       },
       {
-        title: "Decentralized Application (DApp) Developer ",
-        description: <>Building next gen web3 Apps</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/shProjects/bibaho.png",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+        title: "Full-stack Web Development",
+        description: (
+          <>
+            Building production web applications end to end, from typed databases to polished,
+            responsive interfaces.
+          </>
+        ),
+        tags: [
+          "TypeScript",
+          "React",
+          "Next.js",
+          "Node.js",
+          "Vue",
+          "PostgreSQL",
+          "Drizzle ORM",
+          "Tailwind CSS",
         ],
+        images: [],
       },
       {
-        title: "Deep Learning Practitioner",
-        description: <>Designing neural netwrok for various problems and fine tune them </>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/shProjects/nn1.png",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/shProjects/nn2.png",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+        title: "Blockchain & Decentralized Systems",
+        description: (
+          <>
+            Award-winning blockchain solutions for document verification, ticketing, and
+            transparent e-governance.
+          </>
+        ),
+        tags: [
+          "Solana",
+          "Smart Contracts",
+          "IPFS",
+          "Decentralized Identity",
+          "Document Verification",
         ],
+        images: [],
       },
       {
-        title: "Designing",
-        description: <>Designing content, posters and other visuals</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/shProjects/de1.png",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/shProjects/de2.png",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Tooling & Foundations",
+        description: (
+          <>
+            Core programming languages and the tools I rely on for day-to-day development and
+            research.
+          </>
+        ),
+        tags: ["C / C++", "JavaScript", "Git", "Linux", "Docker", "Bash"],
+        images: [],
       },
     ],
   },

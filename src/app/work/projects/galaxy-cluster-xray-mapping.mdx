@@ -1,0 +1,48 @@
+---
+title: "Galaxy Cluster X-ray Temperature Mapping"
+publishedAt: "2026-02"
+summary: "A Chandra X-ray data-processing pipeline that produces spatially-resolved temperature, pressure, and density maps of galaxy clusters — built to hunt for radio mini-haloes in the intracluster medium."
+images: []
+team:
+  - name: "Md Shahadat Hossain Shahal"
+    role: "Research Assistant, CASSA"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/shahadatw6"
+link: "https://github.com/shahal-dev/temp_mimic"
+---
+
+## Overview
+
+A pipeline for **spatially-resolved spectroscopy** of galaxy clusters using Chandra X-ray
+Observatory ACIS data. Galaxy clusters are the largest gravitationally bound structures in
+the universe; their intracluster medium (ICM) — hot gas at 10⁷–10⁸ K — emits X-rays through
+thermal bremsstrahlung. Mapping the temperature, pressure, and density of this gas reveals
+cluster dynamics, merger shocks, and diffuse radio sources.
+
+This work supports my research at CASSA on **detecting radio mini-haloes** in X-ray galaxy
+cluster images and writing a reproducible pipeline to create temperature maps from Chandra
+data. It builds on and extends the ClusterPyXT toolchain with a streamlined, GUI-free CLI
+workflow.
+
+## What It Does
+
+- **Data reprocessing:** Reprocesses raw Chandra ACIS observations with CIAO/CALDB.
+- **Deflaring & point-source removal:** Cleans flares and excludes contaminating point sources.
+- **Observation merging:** Reprojects and merges multiple observations into a single
+  exposure-corrected surface-brightness map.
+- **Contour binning:** Adaptively bins regions to a target signal-to-noise for spectral fits.
+- **Thermodynamic maps:** Produces temperature, pressure, and density maps of the ICM via
+  spectral fitting across the cluster.
+
+## Technologies Used
+
+- **CIAO 4.14 / CALDB** — Chandra X-ray data reduction
+- **Python 3.8+**, **Astropy**, **NumPy**, **Matplotlib**
+- Contour-binning spectral analysis for thermodynamic mapping
+
+## Repositories
+
+This effort spans several repositories: a documented technical pipeline
+([`temp_mimic`](https://github.com/shahal-dev/temp_mimic)), a streamlined command-line
+interface ([`mimic_cli`](https://github.com/shahal-dev/mimic_cli)), and a modified fork of
+ClusterPyXT ([`modified_clusterpyXT`](https://github.com/shahal-dev/modified_clusterpyXT)).

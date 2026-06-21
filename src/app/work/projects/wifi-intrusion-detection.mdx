@@ -1,0 +1,40 @@
+---
+title: "WiFi Intrusion Detection System"
+publishedAt: "2025-06"
+summary: "A PyTorch deep-learning framework that detects WiFi network attacks, classifying 14 attack types from the AWID3 dataset using neural and tree-based models in a production-ready training pipeline."
+images: []
+team:
+  - name: "Md Shahadat Hossain Shahal"
+    role: "Developer & Researcher"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/shahadatw6"
+link: "https://github.com/shahal-dev/wifi-ids"
+---
+
+## Overview
+
+A machine-learning framework for detecting WiFi network attacks using deep learning. It
+provides a complete pipeline — from raw AWID3 capture data to trained, deployable models —
+for classifying 14 different classes of WiFi traffic, including a wide range of 802.11
+attacks. The project is part of ongoing research on *intrusion detection in WiFi signals*.
+
+## Key Features
+
+- **Complete pipeline:** From raw AWID3 data through cleaning, balancing, and feature
+  engineering to trained models and evaluation.
+- **14 traffic classes:** Deauth, SQL Injection, SSDP, Evil Twin, Website Spoofing,
+  Disassociation, (Re)Association, Rogue AP, Krack, Kr00k, SSH, Botnet, Malware, and Normal.
+- **Multiple architectures:** Neural networks (FeedForward, LSTM, CNN) alongside tree models
+  (Random Forest, XGBoost) for comparison.
+- **29 engineered features:** Carefully selected Frame, Radio/Physical-layer, and WLAN/802.11
+  features.
+- **Production-ready training:** PyTorch Lightning with automatic checkpointing, early
+  stopping, and logging.
+- **Comprehensive evaluation:** Confusion matrices, ROC curves, per-class metrics, and
+  feature-importance analysis.
+
+## Technologies Used
+
+- **Python**, **PyTorch**, **PyTorch Lightning**
+- **XGBoost**, **scikit-learn** (Random Forest, metrics)
+- **AWID3** intrusion-detection dataset

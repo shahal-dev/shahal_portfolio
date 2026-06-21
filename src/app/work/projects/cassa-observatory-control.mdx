@@ -1,0 +1,43 @@
+---
+title: "CASSA — Observatory Control System"
+publishedAt: "2026-02"
+summary: "A web-controlled, multi-observatory system for automated transient follow-up: ingest candidates from the ALeRCE broker, filter by visibility, get supervisor approval, then image on real INDI telescopes with plate-solving, autofocus, and guiding."
+images: []
+team:
+  - name: "Md Shahadat Hossain Shahal"
+    role: "Research Assistant & Developer, CASSA"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/shahadatw6"
+link: "https://github.com/shahal-dev/cassatom"
+---
+
+## Overview
+
+CASSA is a web-controlled, multi-observatory system for **transient follow-up astronomy**.
+It connects the alert stream of the sky to real hardware: candidates flow in from the
+**ALeRCE** broker, get filtered by visibility, pass a supervisor approval gate, and are then
+imaged automatically on real **INDI** instruments — with plate-solving, autofocus, guiding,
+a weather/safety state machine, role-based access control, and a provenance FITS archive.
+
+## Key Features
+
+- **Transient pipeline:** Polls the ALeRCE ZTF API per transient class (SN / AGN / VS),
+  scores candidates, applies an Astropy visibility filter, and queues approved targets for
+  execution.
+- **Manual instrument control:** Async INDI client (no libindi build required) driving
+  mount, camera, focuser, filter wheel, and guider from a live console.
+- **Imaging + archive:** Provenance FITS with OBSID, pointing, time, filter, focus, and
+  SHA-256 checksums; SQLite index, previews, archive browser, and an SFTP gateway.
+- **Plate-solve & autofocus:** ASTAP plate-solving and autofocus, plus PHD2 guiding and
+  fast offline name resolution.
+- **Night planning:** Almanac (twilight, astronomical night, moon), observability alerts,
+  and best-time queue ordering.
+- **Weather + safety FSM** with an automated weather API, **RBAC** (viewer / observer /
+  operator / admin), and a multi-observatory dashboard where each site has its own backend.
+
+## Technologies Used
+
+- **Python** backend with an async **INDI** client
+- **ALeRCE** broker integration, **Astropy** for visibility/almanac computations
+- **ASTAP** (plate-solving / autofocus), **PHD2** (guiding)
+- **SQLite** provenance archive with FITS metadata and checksums

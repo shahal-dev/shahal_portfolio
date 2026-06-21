@@ -1,0 +1,49 @@
+---
+title: "RGC — Radio Galaxy Classifier"
+publishedAt: "2025-11"
+summary: "A deep-learning, semi-supervised model that classifies the morphology of bent radio AGNs (Wide-Angle Tail and Narrow-Angle Tail galaxies) from large-scale radio survey images. This is the core of my undergraduate thesis."
+images: []
+team:
+  - name: "Md Shahadat Hossain Shahal"
+    role: "Undergraduate Research Assistant, CASSA"
+    avatar: "/images/avatar.jpg"
+    linkedIn: "https://www.linkedin.com/in/shahadatw6"
+link: "https://github.com/shahal-dev/RGC"
+---
+
+## Overview
+
+RGC (Radio Galaxy Classifier) is a deep-learning pipeline for automatically classifying the
+morphology of radio-loud active galactic nuclei (AGNs) from large-scale survey imagery. The
+work focuses on **bent-tail radio galaxies** — specifically **Wide-Angle Tail (WAT)** and
+**Narrow-Angle Tail (NAT)** sources — whose distorted morphologies trace their interaction
+with the surrounding intracluster medium.
+
+This project forms the basis of my undergraduate thesis, *"Machine Learning Approaches for
+Radio Galaxy Morphology Classification,"* at the Center for Astronomy, Space Science and
+Astrophysics (CASSA), Independent University, Bangladesh.
+
+## Key Features
+
+- **Equivariant CNNs (e2cnn):** Uses E(2)-equivariant steerable convolutions so the model
+  is robust to the arbitrary rotations radio sources appear in — a natural fit for the
+  rotational symmetry of astronomical images.
+- **Semi-supervised learning:** Leverages a large pool of unlabelled survey cutouts
+  alongside a small labelled set, addressing the chronic scarcity of expert-labelled
+  radio-galaxy data.
+- **VLA / LoTSS imagery:** Trained and evaluated on cutouts from large radio surveys to
+  classify bent radio AGNs at scale.
+- **Reproducible pipeline:** End-to-end data preparation, model training, evaluation, and
+  inference designed for re-use on new survey releases.
+
+## Technologies Used
+
+- **Python**, **PyTorch**, and **e2cnn** for equivariant deep learning
+- **Astropy** and **FITS** handling for astronomical image data
+- **NumPy / Matplotlib** for analysis and visualization
+
+## Research Output
+
+This work is being prepared as a publication — *RGC: a radio AGN classifier based on deep
+learning. I. A semi-supervised model for the VLA images of bent radio AGNs* (under review).
+Ongoing work extends the same model to additional morphological classes (sFRI and sFRII).
